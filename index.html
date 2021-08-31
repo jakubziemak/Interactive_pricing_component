@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+<div class="header">
+  <h1>Simple, traffic-based pricing</h1>
+  <p>Sign-up for our 30-day trial. No credit card required.</p> 
+</div>
+<div class="main">
+    <div class="upper">
+      <div class="head">
+        <p id="pv"><span id="pageviews"> </span>&nbsp;PAGEVIEWS</p>         
+        <p id="price"><span id="cost"></span>&nbsp;/month</p>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="5" value="3" class="slider" id="myRange" step="1" oninput=insert()>
+      </div>
+      <div class="monthly-yearly">
+    <p class="monthly">Monthly Billing</p>
+    <label>
+      <input type="checkbox" id="switch" onclick="insert()">
+    </label>
+    <p class="yearly">Yearly Billing</p>
+    <p class="discount">25% discount</p>
+      </div>
+    </div>
+    <div class="lower">
+      <div class="info">
+      <p class="list"><img src="images/icon-check.svg" class="check">websites</p>
+      <p class="list"><img src="images/icon-check.svg" class="check">100% data ownership</p>
+      <p class="list"><img src="images/icon-check.svg" class="check">Email reports</p>
+      </div>
+      <a href=#>Start my trial</a>
+    </div>
+</div>
+<script src="js.js"></script>
+</body>
+</html>
